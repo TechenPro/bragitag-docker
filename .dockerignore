@@ -1,0 +1,6 @@
+.vscode
+library
+src/.git*
+src/bragiengine/__pycache__
+src/bragiengine/main.py
+src/.config

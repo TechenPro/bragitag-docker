@@ -1,0 +1,14 @@
+version: '3.0'
+
+services:
+  bragitag:
+    image: bragitag
+    volumes:
+      - ./library:/library
+    ports:
+      - 5000:5000
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/Denver
+    restart: unless-stopped
